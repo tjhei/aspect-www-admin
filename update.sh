@@ -37,8 +37,8 @@ cd ..
 if [ "$CHANGED" == "1" ]
 then
     # build www/publications.html
-    cp aspect-repo/doc/manual/citing_aspect.bib publication-list/
+    cp aspect-repo/doc/manual/citing_aspect.bib publication-list/aspect.bib
     cp www-repo/jabref-template/* publication-list/
     docker run --rm -v "$(pwd)/publication-list:/home/bob/source" tjhei/dealii-java-jabref
-    cp publication-list/output.html www/publication-list.html
+    cp publication-list/output.html www/publications.html
 fi
