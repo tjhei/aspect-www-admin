@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# TODO --single-branch clone
+git clone --single-branch --branch master https://github.com/geodynamics/aspect.git aspect-repo
 
-mkdir aspect-repo
-mkdir www-repo
+git clone --single-branch --branch www https://github.com/geodynamics/aspect.git www-repo
+
 mkdir www
 mkdir publication-list
 
